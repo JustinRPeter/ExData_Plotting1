@@ -28,7 +28,7 @@
     exdata <- data[exdates,]
 
 
-#---Put the date in POSIX format
+#---Put the date in POSIXlt format
     datetimestr <- paste(exdata$Date,exdata$Time)
 
     exdata$DateTime <- strptime(datetimestr,format="%d/%m/%Y %H:%M:%S")
